@@ -1,50 +1,30 @@
-<!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Catalogo Prodotti Unichimica</title>\
-    <link rel="stylesheet" href="styles.css">\
-    <script src="script.js" defer></script>\
-</head>\
-<body>\
-\
-    <!-- Header -->\
-    <header class="header">\
-        <div class="logo">Unichimica</div>\
-        <a href="#contact" class="contact-link">Contattaci</a>\
-    </header>\
-\
-    <!-- Main Content -->\
-    <main class="content">\
-        <h1 class="page-title">Catalogo Prodotti Unichimica</h1>\
-        \
-        <!-- Product List -->\
-        <div class="product-list">\
-            <!-- Repeat this structure for each product -->\
-            <div class="product-row">\
-                <span class="product-name">Lorem Ipsum Chemical</span>\
-                <span class="update-date">Last Updated: 2024-01-01</span>\
-                <a href="safety_data_sheet.pdf" target="_blank" class="doc-icon" aria-label="View Safety Data Sheet">\uc0\u55357 \u56516 </a>\
-                <button class="dropdown-arrow" aria-label="Show Description">\uc0\u11015 \u65039 </button>\
-                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>\
-            </div>\
-            <!-- End of product structure -->\
-        </div>\
-    </main>\
-\
-    <!-- Footer with Contact and Map -->\
-    <footer id="contact" class="footer">\
-        <div class="contact-info">\
-            <h2>Contact Us</h2>\
-            <p>Email: info@unichimica.com | Phone: +39 123 456 789</p>\
-            <div class="map">\
-                <!-- Embed Google Map here -->\
-                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>\
-            </div>\
-        </div>\
-    </footer>\
-\
-</body>\
-</html>\
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Prodotti Unichimica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Catalogo Prodotti Unichimica</div>
+        <a href="#contact" class="contact-link">Contattaci</a>
+    </header>
+
+    <!-- Product List (Products will be inserted here dynamically) -->
+    <div id="product-list"></div>
+
+    <!-- Footer with Contact and Map -->
+    <footer id="contact">
+        <p>Contact Us at info@unichimica.com | Tel: +39 123 456 789</p>
+        <p>Find us here:</p>
+        <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
