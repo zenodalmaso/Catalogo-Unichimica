@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo Prodotti Unichimica</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
-        <div class="logo">Catalogo Prodotti Unichimica</div>
-        <a href="#contact" class="contact-link">Contattaci</a>
+        <div class="logo">
+            <img src="logo.png" alt="Unichimica Logo">
+            <h1>Catalogo Prodotti Unichimica</h1>
+        </div>
     </header>
-
-    <!-- Product List (Products will be inserted here dynamically) -->
-    <div id="product-list"></div>
-
-    <!-- Footer with Contact and Map -->
-    <footer id="contact">
-        <p>Contact Us at info@unichimica.com | Tel: +39 123 456 789</p>
-        <p>Find us here:</p>
-        <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </footer>
-
+    <main>
+        <div class="product-list">
+            <!-- Generate 50 rows of product items -->
+            <div class="product-item">
+                <div class="icon"><a href="safety_sheet.pdf" target="_blank"><img src="document_icon.png" alt="Document Icon"></a></div>
+                <div class="product-name">Product 1</div>
+                <div class="update-date">Updated on 01/01/2023</div>
+                <div class="dropdown-arrow">&#9660;</div>
+                <div class="product-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Description of Product 1.</p>
+                </div>
+            </div>
+            <!-- Repeat similar blocks for each product row -->
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
-
